@@ -15,6 +15,15 @@ class MoneyTransferTest {
     DashboardPage dashboardPage;
 
     @Test
+    void openTransferForm() {
+        loginPage = open("http://localhost:9999/", LoginPage.class);
+        var authInfo = DataHelper.getAuthInfo();
+        var verificationPage = LoginPage.validLogin(authInfo);
+        var verificationCode = DataHelper.getVerificationCodeFor(authInfo);
+        dashboardPage = verificationPage.validVerify((verificationCode));
+    }
+
+    @Test
     void transferAmountFirstCardToSecondCard() {
         loginPage = open("http://localhost:9999/", LoginPage.class);
         var authInfo = DataHelper.getAuthInfo();
