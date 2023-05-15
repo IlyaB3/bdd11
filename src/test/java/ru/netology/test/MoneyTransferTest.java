@@ -13,7 +13,7 @@ import static ru.netology.data.DataHelper.getFirstCardInfo;
 class MoneyTransferTest {
     LoginPage loginPage;
     DashboardPage dashboardPage;
-    
+
     @Test
     void transferAmountFirstCardToSecondCard() {
         loginPage = open("http://localhost:9999/", LoginPage.class);
