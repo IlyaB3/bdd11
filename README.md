@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/fg7u14sujxidtoho?svg=true)](https://ci.appveyor.com/project/IlyaB3/bdd11)
+[![Java CI with Gradle](https://github.com/IlyaB3/bdd11/actions/workflows/gradle.yml/badge.svg)](https://github.com/IlyaB3/bdd11/actions/workflows/gradle.yml)
